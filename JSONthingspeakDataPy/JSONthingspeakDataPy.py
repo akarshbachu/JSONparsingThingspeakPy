@@ -9,10 +9,10 @@ pos=input.find('feeds');
 str1=input[196:len(input)-1];
 #print str1
 
-info=json.loads(str1);
+info=json.loads(str1);#it returns dictionary
 print "no.of Heart rate values: ",len(info)
 for item in info:
-    print item['field1']
+    print item['field1']#getting its respective value from key
 
 
 #this is with out removing unnecessary part from string, here the problem is we
